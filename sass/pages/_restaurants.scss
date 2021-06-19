@@ -1,0 +1,27 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid $animation_button_color;
+}
+
+.title_restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.entrance {
+    border: 2px solid $animation_button_color;
+    width: 90%;
+}
+
+.dishes {
+    border: 2px solid $animation_button_color;
+    width: 90%;
+}
+
+.desserts {
+    border: 2px solid $animation_button_color;
+    width: 90%;
+}

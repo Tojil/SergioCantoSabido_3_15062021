@@ -1,0 +1,17 @@
+@mixin button_color {  
+    background: #E972DA;
+    background: -webkit-linear-gradient(top left, #E972DA, #A25BDB);
+    background: -moz-linear-gradient(top left, #E972DA, #A25BDB);
+    background: linear-gradient(to bottom right, #E972DA, #A25BDB);
+} 
+
+@mixin heart_color {
+    background: #E06FDB;
+    background: -webkit-linear-gradient(bottom, #E06FDB, #B160DB);
+    background: -moz-linear-gradient(bottom, #E06FDB, #B160DB);
+    background: linear-gradient(to top, #E06FDB, #B160DB);
+}
+
+@mixin shrikhand {
+    font-family: 'shrikhand', sans-serif;
+}
