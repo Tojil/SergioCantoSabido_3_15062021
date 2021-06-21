@@ -17,10 +17,10 @@ section {
 .container {
 	width: 85%;
 	&__operation {
-		font-size: 1.3rem;
+		font-size: 1rem;
 		margin-right: -3%;
 		height: 60px;
-		padding-top: 0px;
+		padding-top: 5px;
 		padding-bottom: 10px;
 		display: flex;
 		flex-direction: row;
@@ -37,7 +37,7 @@ section {
 		font-size: 1.5rem;
 		padding-left: 50px;
 		padding-right: 30px;
-		margin-top: 20px;
+		margin-top: 23px;
 		color: $numbers_bg-color;
 	}
 	&__number {
@@ -45,8 +45,8 @@ section {
 		height: 22px;
 		width: 28px;
 		left: -13px;
-		top: 0px;
-		padding-top: 3px;
+		top: 20px;
+		padding-top: 2px;
 		padding-bottom: 5px;
 		border-radius: 50%;
 		background-color: $numbers_bg-color;
@@ -100,8 +100,13 @@ section {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	border-radius: 15px;
 	background-color: $container_bg-color;
+	&--two {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
 }
 
 .container__restaurants h2 {
@@ -113,6 +118,8 @@ section {
 	border-radius: 15px;
 	border: 3px solid blue;
 	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 	position: relative;
 	@include shadow
 }
@@ -138,7 +145,7 @@ section {
 	padding-left: 20px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1150px) {
 	section {
 		display: flex;
 		flex-direction: column;
@@ -147,5 +154,18 @@ section {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		&__operation p {
+			padding-right: 20px;
+			font-size: 1.3rem;
+		}
+	}
+	.container__restaurants {
+		&--two {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 90%;
+		}
 	}
 }
