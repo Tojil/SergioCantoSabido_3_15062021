@@ -21,6 +21,7 @@ section {
 		margin-right: -3%;
 		height: 60px;
 		padding-top: 0px;
+		padding-bottom: 10px;
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
@@ -35,8 +36,8 @@ section {
 	&__operation i {
 		font-size: 1.5rem;
 		padding-left: 50px;
-		padding-right: 50px;
-		margin-top: 10px;
+		padding-right: 30px;
+		margin-top: 20px;
 		color: $numbers_bg-color;
 	}
 	&__number {
@@ -44,8 +45,9 @@ section {
 		height: 22px;
 		width: 28px;
 		left: -13px;
-		top: 3px;
-		padding-top: 5px;
+		top: 0px;
+		padding-top: 3px;
+		padding-bottom: 5px;
 		border-radius: 50%;
 		background-color: $numbers_bg-color;
 		color: white;
@@ -94,9 +96,25 @@ section {
 }
 
 .container__restaurants {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	border-radius: 15px;
+	background-color: $container_bg-color;
+}
+
+.container__restaurants h2 {
+	width: 90%;
+}
+
+.card__restaurant {
 	width: 90%;
 	border-radius: 15px;
+	border: 3px solid blue;
+	margin-bottom: 20px;
 	position: relative;
+	@include shadow
 }
 
 .card__nouveau {
@@ -111,9 +129,13 @@ section {
 
 }
 
-.card__restaurant {
-	border-radius: 15px;
-	border: 3px solid blue;	
+.card__text {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	padding-left: 20px;
 }
 
 @media screen and (min-width: 1024px) {

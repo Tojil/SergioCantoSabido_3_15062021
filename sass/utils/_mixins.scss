@@ -15,3 +15,7 @@
 @mixin shrikhand {
     font-family: 'shrikhand', sans-serif;
 }
+
+@mixin shadow {
+    box-shadow: 0px 5px 15px rgb(146, 142, 142);
+}
