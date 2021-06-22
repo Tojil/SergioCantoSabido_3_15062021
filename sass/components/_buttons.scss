@@ -6,6 +6,8 @@
     border-radius: 30px;
     padding-top: 20px;
     @include button_color
-    
+}
 
+.button {
+    @include shadow
 }
