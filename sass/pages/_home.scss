@@ -139,7 +139,10 @@
 	width: 90%;
 	padding-left: 20px;
 }
-
+.card__text i:hover {
+	animation: heart 1s;
+	@include heart_color
+}
 @media screen and (min-width: 1150px) {
 	section {
 		display: flex;

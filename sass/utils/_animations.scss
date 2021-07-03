@@ -44,3 +44,12 @@
               transform: rotate(5*360deg);
     }
 }
+
+@keyframes heart {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
