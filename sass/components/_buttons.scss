@@ -11,3 +11,8 @@
 .button {
     @include shadow
 }
+
+.button:hover {
+    filter: brightness(110%) saturate(140%);
+    @include strongShadow
+}
