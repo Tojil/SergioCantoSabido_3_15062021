@@ -16,3 +16,15 @@
     filter: brightness(110%) saturate(140%);
     @include strongShadow
 }
+
+
+.card__text i {
+    height: 0px;
+    animation: heart 1s ease-in-out;
+    padding-right: 20px;
+}
+
+.card__text i:hover {
+    height: 100%;
+    @include heart_color
+}

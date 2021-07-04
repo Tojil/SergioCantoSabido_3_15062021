@@ -47,9 +47,11 @@
 
 @keyframes heart {
     from {
-        opacity: 0;
+        height: 0%;
+        opacity: 0%;
     }
     to {
+        height: 100%;
         opacity: 100%;
     }
 }
