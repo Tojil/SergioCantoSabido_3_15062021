@@ -16,10 +16,19 @@ footer p {
     margin-left: 30px;
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
 footer .titles {
     font-size: 1.3rem;
     padding-top: 25px;
     @include shrikhand
+}
+
+.contact:active {
+    
 }
 
 @media screen and (min-width: 1150px) {
