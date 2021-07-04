@@ -44,11 +44,9 @@
 @keyframes heart {
   from {
     height: 0%;
-    opacity: 0%;
   }
   to {
     height: 100%;
-    opacity: 100%;
   }
 }
 body {
@@ -169,17 +167,14 @@ p {
 }
 
 .card__text i {
-  height: 0px;
-  animation: heart 1s ease-in-out;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .card__text i:hover {
-  height: 100%;
-  background: #E06FDB;
-  background: -webkit-linear-gradient(bottom, #E06FDB, #B160DB);
-  background: -moz-linear-gradient(bottom, #E06FDB, #B160DB);
-  background: linear-gradient(to top, #E06FDB, #B160DB);
+  animation: heart 1000ms alternate both;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header i {

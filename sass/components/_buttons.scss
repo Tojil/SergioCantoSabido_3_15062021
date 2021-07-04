@@ -19,12 +19,11 @@
 
 
 .card__text i {
-    height: 0px;
-    animation: heart 1s ease-in-out;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .card__text i:hover {
-    height: 100%;
-    @include heart_color
+    animation: heart 1000ms alternate both;
+    @include heartGradient
 }
+	
