@@ -244,21 +244,26 @@ footer .titles {
     justify-content: space-evenly;
   }
 }
-body {
-  display: flex;
-  align-items: center;
+.loader {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #99E2D0;
+  z-index: 9998;
 }
 
 .back {
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   top: 50%;
   width: auto;
   font-family: "shrikhand";
-  text-align: center;
 }
 
 .back span {
+  z-index: 9999;
   font-size: 1.5em;
   color: black;
   background: #99E2D0;
