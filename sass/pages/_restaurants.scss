@@ -1,7 +1,6 @@
 .image__bg {
     width: 100%;
     object-fit: cover;
-    align-self: center;
 }
 
 .section__restaurants {
@@ -16,14 +15,38 @@
 }
 
 .title_restaurant {
+    width: 85%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 30px;
+    & i {
+        font-size: 1.5rem;
+        padding-top: 5px;
+        padding-right: 10px;
+    }
+}
+
+.titles {
+    font-size: 1.5rem;
+    margin-top: 0px;
+    @include shrikhand
 }
 
 .prix {
     padding-top: 23px;
     padding-right: 20px;
+}
+
+.title__menu {
+    margin-bottom: 5px;
+}
+
+.underLine {
+    border-bottom: 3px solid $new_bg-color;
+    width: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 .entrance, 
