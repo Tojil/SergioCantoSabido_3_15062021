@@ -24,6 +24,7 @@
 
 .card__text i:hover {
     animation: heart 1000ms alternate both;
+    animation-duration: 10s;
     @include heartGradient
 }
 	
