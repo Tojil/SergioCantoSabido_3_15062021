@@ -57,6 +57,7 @@
     &__text2,
     &__text3,
     &__text4 {
+        height: 80px;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -64,6 +65,11 @@
         background-color: white;
         border-radius: 20px;
         @include shadow
+    }
+    & p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 }
 
