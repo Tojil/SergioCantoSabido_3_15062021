@@ -5,13 +5,14 @@
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	height: 100%;
+	height: 200%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	background-color: #99E2D0;
 	z-index: 9998;
 	animation: opacity 3s ease-in-out 4s forwards;
+
 }
 
 .loader {
@@ -40,18 +41,7 @@
 		animation-duration: 3s 3s;
 		animation-iteration-count: 4;
 	}
-	@keyframes jumb {
-		0% {
-			transform:translateY(0px)
-		}
-		50% {
-			transform:translateY(-30px);
-			box-shadow:0 10px 0 #FF79DA;
-		}
-		100% {
-			transform:translateY(0px)	
-		}
-	}
+
 	.back span:nth-child(1) {
 		animation-delay:0s;
 	}
@@ -148,11 +138,11 @@
 	}
 	&__number {
 		position: absolute;
-		height: 22px;
+		height: 20px;
 		width: 28px;
 		left: -13px;
 		top: 20px;
-		padding-top: 2px;
+		padding-top: 4px;
 		padding-bottom: 4px;
 		border-radius: 50%;
 		background-color: $numbers_bg-color;
@@ -243,6 +233,7 @@
 		margin-top: 5px;
 	}
 	& i {
+		
 		font-size: 2rem;
 		font-weight: lighter;
 	}
@@ -255,11 +246,15 @@
 	}
 	.container {
 		display: flex;
+		cursor: alias;
 		flex-direction: row;
 		justify-content: space-between;
 		&__operation p {
 			padding-right: 20px;
 			font-size: 1.3rem;
+		}
+		&__operation i {
+			margin-top: 20px;
 		}
 	}
 	.container__restaurants {
@@ -285,17 +280,5 @@
 		animation: jumb 2s;
 		animation-duration: 3s 3s;
 		animation-iteration-count: 4;
-	}
-	@keyframes jumb {
-		0% {
-			transform:translateY(0px)
-		}
-		50% {
-			transform:translateY(-30px);
-			box-shadow:0 15px 0 #FF79DA;
-		}
-		100% {
-			transform:translateY(0px)	
-		}
 	}
 }

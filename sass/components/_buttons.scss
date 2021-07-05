@@ -23,8 +23,13 @@
 }
 
 .card__text i:hover {
-    animation: heart 1000ms alternate both;
-    animation-duration: 10s;
+    animation: heart 1s alternate;
+    font-weight: 900;
+    @include heartGradient
+}
+.titles i:hover {
+    animation: heart 1s alternate;
+    font-weight: 900;
     @include heartGradient
 }
 	
