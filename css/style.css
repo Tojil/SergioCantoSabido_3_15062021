@@ -659,7 +659,6 @@ footer .titles {
 }
 .titles__heart--opacity {
   font-weight: lighter;
-  color: white;
   position: absolute;
   font-size: 1.5rem;
   right: 10px;
@@ -668,7 +667,7 @@ footer .titles {
 }
 .titles__heart--opacity:hover {
   animation: heart 3s alternate forwards;
-  cursor: grab;
+  cursor: alias;
 }
 
 .prix {
@@ -709,7 +708,6 @@ footer .titles {
 .dishes p,
 .desserts p {
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 

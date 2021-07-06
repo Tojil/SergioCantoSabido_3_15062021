@@ -47,7 +47,6 @@
     @include shrikhand;
     &__heart--opacity {
         font-weight: lighter;
-        color: white;
         position: absolute;
         font-size: 1.5rem;
         right: 10px;
@@ -55,7 +54,7 @@
         z-index: 100;
         &:hover {
             animation: heart 3s alternate forwards;
-            cursor: grab;
+            cursor: alias;
         }
     }
 }
@@ -94,7 +93,6 @@
     }
     & p {
         overflow: hidden;
-        white-space: nowrap;
         text-overflow: ellipsis;
     }
 }
