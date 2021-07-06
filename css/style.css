@@ -43,10 +43,10 @@
 }
 @keyframes heart {
   from {
-    height: 0%;
+    opacity: 1;
   }
   to {
-    height: 30%;
+    opacity: 0;
   }
 }
 @keyframes opacity {
@@ -68,6 +68,22 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @media screen and (min-width: 1150px) {
@@ -205,20 +221,21 @@ p {
   padding-right: 10px;
 }
 
-.card__text i:hover {
-  animation: heart 1s alternate;
+.card__heart {
   font-weight: 900;
   background: -webkit-gradient(linear, left top, left bottom, from(#B160DB), to(#E06FDB));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.titles i:hover {
-  animation: heart 1s alternate;
-  font-weight: 900;
-  background: -webkit-gradient(linear, left top, left bottom, from(#B160DB), to(#E06FDB));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.card__heart--opacity {
+  font-weight: lighter;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  z-index: 100;
+}
+.card__heart--opacity:hover {
+  animation: heart 3s alternate forwards;
 }
 
 header i {
@@ -289,7 +306,7 @@ footer .titles {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 200%;
+  height: 300%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -300,6 +317,22 @@ footer .titles {
 
 .loader {
   transition: transform;
+}
+
+.spin {
+  position: fixed;
+  top: 20%;
+  margin: auto;
+  border: 16px solid #9356DC;
+  border-radius: 50%;
+  border-top: 16px solid #FF79DA;
+  border-right: 16px solid #9356DC;
+  border-bottom: 16px solid #FF79DA;
+  border-left: 16px solid #9356DC;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
 }
 
 .back {
@@ -499,6 +532,7 @@ footer .titles {
 }
 
 .card__text {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -567,6 +601,11 @@ footer .titles {
     animation-duration: 3s 3s;
     animation-iteration-count: 4;
   }
+
+  .spin {
+    width: 70px;
+    height: 70px;
+  }
 }
 .image__bg {
   width: 100%;
@@ -585,23 +624,51 @@ footer .titles {
 }
 
 .title_restaurant {
+  position: relative;
   width: 85%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 30px;
 }
-.title_restaurant i {
-  font-weight: lighter;
+.title_restaurant span i {
+  font-weight: 900;
   font-size: 1.5rem;
   padding-top: 5px;
   padding-right: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B160DB), to(#E06FDB));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card__heart--opacity {
+  font-weight: lighter;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  z-index: 100;
+}
+.card__heart--opacity:hover {
+  animation: heart 3s alternate forwards;
 }
 
 .titles {
   font-size: 1.5rem;
   margin-top: 0px;
   font-family: "shrikhand", sans-serif;
+}
+.titles__heart--opacity {
+  font-weight: lighter;
+  color: white;
+  position: absolute;
+  font-size: 1.5rem;
+  right: 10px;
+  top: 34px;
+  z-index: 100;
+}
+.titles__heart--opacity:hover {
+  animation: heart 3s alternate forwards;
+  cursor: grab;
 }
 
 .prix {

@@ -15,23 +15,49 @@
 }
 
 .title_restaurant {
+    position: relative;
     width: 85%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 30px;
-    & i {
-        font-weight: lighter;
+    & span i {
+        font-weight: 900;
         font-size: 1.5rem;
         padding-top: 5px;
         padding-right: 10px;
+        @include heartGradient;
+    }
+}
+
+.card__heart--opacity {
+    font-weight: lighter;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    z-index: 100;
+    &:hover {
+        animation: heart 3s alternate forwards;
     }
 }
 
 .titles {
     font-size: 1.5rem;
     margin-top: 0px;
-    @include shrikhand
+    @include shrikhand;
+    &__heart--opacity {
+        font-weight: lighter;
+        color: white;
+        position: absolute;
+        font-size: 1.5rem;
+        right: 10px;
+        top: 34px;
+        z-index: 100;
+        &:hover {
+            animation: heart 3s alternate forwards;
+            cursor: grab;
+        }
+    }
 }
 
 .prix {

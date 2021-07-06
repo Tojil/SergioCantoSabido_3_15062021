@@ -22,14 +22,19 @@
     padding-right: 10px;
 }
 
-.card__text i:hover {
-    animation: heart 1s alternate;
+.card__heart {
     font-weight: 900;
-    @include heartGradient
+    @include heartGradient;
+    &--opacity {
+        font-weight: lighter;
+        background-color: white;
+        position: absolute;
+        right: 0px;
+        z-index: 100;
+        &:hover {
+            animation: heart 3s alternate forwards;
+        }
+    }
 }
-.titles i:hover {
-    animation: heart 1s alternate;
-    font-weight: 900;
-    @include heartGradient
-}
+
 	
