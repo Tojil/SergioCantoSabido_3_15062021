@@ -58,6 +58,14 @@
     z-index: -10;
   }
 }
+@keyframes opacity2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes jumb {
   0% {
     transform: translateY(0px);
@@ -100,6 +108,10 @@
     }
   }
 }
+::-webkit-scrollbar {
+  opacity: 0;
+}
+
 body {
   margin-left: 0px;
   margin-right: 0px;
@@ -229,10 +241,9 @@ p {
 }
 .card__heart--opacity {
   font-weight: lighter;
-  background-color: white;
+  background-color: #f6f6f6;
   position: absolute;
   right: 0px;
-  z-index: 100;
 }
 .card__heart--opacity:hover {
   animation: heart 3s alternate forwards;
@@ -269,7 +280,6 @@ footer {
   background-color: #353535;
   color: #ffffff;
   height: 300px;
-  margin-top: 50px;
 }
 
 footer i {
@@ -298,6 +308,7 @@ footer .titles {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height: 100px;
   }
 }
 .loader {
@@ -389,6 +400,11 @@ footer .titles {
 
 .back span:nth-child(8) {
   animation-delay: 0.7s;
+}
+
+.after__spinLoader {
+  opacity: 0;
+  animation: opacity2 3s ease-in-out 4s forwards;
 }
 
 .container__home {
@@ -491,6 +507,7 @@ footer .titles {
   align-items: center;
   width: 100%;
   background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
 .container__restaurants--two {
   display: flex;
@@ -620,6 +637,7 @@ footer .titles {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin-top: -50px;
+  padding-bottom: 50px;
   background-color: #f6f6f6;
 }
 
@@ -644,7 +662,7 @@ footer .titles {
 
 .card__heart--opacity {
   font-weight: lighter;
-  background-color: white;
+  background-color: #f6f6f6;
   position: absolute;
   right: 0px;
   z-index: 100;
@@ -660,12 +678,11 @@ footer .titles {
 }
 .titles__heart--opacity i {
   font-weight: lighter;
-  background-color: white;
+  background-color: #f6f6f6;
   position: absolute;
   font-size: 1.5rem;
   right: 25px;
   top: 34px;
-  z-index: 100;
 }
 .titles__heart--opacity i:hover {
   animation: heart 3s alternate forwards;
@@ -732,7 +749,6 @@ footer .titles {
 .desserts,
 .entrance {
   width: 90%;
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }

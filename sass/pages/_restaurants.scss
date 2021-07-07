@@ -11,6 +11,7 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     margin-top: -50px;
+    padding-bottom: 50px;
     background-color: $container_bg-color;
 }
 
@@ -33,7 +34,7 @@
 
 .card__heart--opacity {
     font-weight: lighter;
-    background-color: white;
+    background-color: $container_bg-color;
     position: absolute;
     right: 0px;
     z-index: 100;
@@ -48,12 +49,11 @@
     @include shrikhand;
     &__heart--opacity i {
         font-weight: lighter;
-        background-color: white;
+        background-color: $container_bg-color;
         position: absolute;
         font-size: 1.5rem;
         right: 25px;
         top: 34px;
-        z-index: 100;
         &:hover {
             animation: heart 3s alternate forwards;
             cursor: alias;
@@ -116,7 +116,6 @@
 .desserts, 
 .entrance {
     width: 90%;
-    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     &--bold {

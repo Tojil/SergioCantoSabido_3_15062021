@@ -27,10 +27,9 @@
     @include heartGradient;
     &--opacity {
         font-weight: lighter;
-        background-color: white;
+        background-color: $container_bg-color;
         position: absolute;
         right: 0px;
-        z-index: 100;
         &:hover {
             animation: heart 3s alternate forwards;
         }

@@ -82,6 +82,10 @@
 		animation-delay:.7s;
 	}
 	
+.after__spinLoader {
+	opacity: 0;
+	animation: opacity2 3s ease-in-out 4s forwards;
+}
 
 .container__home {
 	width: 100%;
@@ -185,6 +189,7 @@
 	align-items: center;
 	width: 100%;
 	background-color: $container_bg-color;
+	padding-bottom: 50px;
 	&--two {
 		display: flex;
 		flex-direction: column;

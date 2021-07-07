@@ -3,7 +3,6 @@ footer {
     background-color: $footer_bg-color;
     color: $footer_text-color;
     height: 300px;
-    margin-top: 50px;
 }
 
 footer i {
@@ -27,14 +26,11 @@ footer .titles {
     @include shrikhand
 }
 
-.contact:active {
-    
-}
-
 @media screen and (min-width: 1150px) {
     footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        height: 100px;
     }
 }
