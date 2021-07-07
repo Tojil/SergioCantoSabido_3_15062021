@@ -704,12 +704,6 @@ footer .titles {
   border-radius: 20px;
   box-shadow: 0px 5px 15px #a19d9d;
 }
-.entrance p,
-.dishes p,
-.desserts p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
 .entrance__text1,
 .dishes__text1,
@@ -736,6 +730,9 @@ footer .titles {
 .desserts,
 .entrance {
   width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .dishes--bold,
 .desserts--bold,

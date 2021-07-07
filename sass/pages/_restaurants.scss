@@ -89,12 +89,7 @@
         justify-content: space-between;
         background-color: white;
         border-radius: 20px;
-        @include shadow
-    }
-    & p {
-        overflow: hidden;
-        
-        text-overflow: ellipsis;
+        @include shadow;
     }
 }
 
@@ -119,6 +114,9 @@
 .desserts, 
 .entrance {
     width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     &--bold {
         padding-left: 10px;
         margin-bottom: 5px;
