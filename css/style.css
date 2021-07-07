@@ -308,7 +308,7 @@ footer .titles {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 100px;
+    height: 118px;
   }
 }
 .loader {
@@ -622,6 +622,10 @@ footer .titles {
   .spin {
     width: 70px;
     height: 70px;
+  }
+
+  .loader {
+    height: 160%;
   }
 }
 .image__bg {
