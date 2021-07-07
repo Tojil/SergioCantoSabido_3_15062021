@@ -22,10 +22,11 @@
     justify-content: space-between;
     padding-top: 30px;
     & span i {
+        position: absolute;
         font-weight: 900;
         font-size: 1.5rem;
-        padding-top: 5px;
-        padding-right: 10px;
+        right: 25px;
+        top: 34px;
         @include heartGradient;
     }
 }
@@ -45,11 +46,12 @@
     font-size: 1.5rem;
     margin-top: 0px;
     @include shrikhand;
-    &__heart--opacity {
+    &__heart--opacity i {
         font-weight: lighter;
+        background-color: white;
         position: absolute;
         font-size: 1.5rem;
-        right: 10px;
+        right: 25px;
         top: 34px;
         z-index: 100;
         &:hover {

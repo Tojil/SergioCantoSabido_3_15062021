@@ -632,10 +632,11 @@ footer .titles {
   padding-top: 30px;
 }
 .title_restaurant span i {
+  position: absolute;
   font-weight: 900;
   font-size: 1.5rem;
-  padding-top: 5px;
-  padding-right: 10px;
+  right: 25px;
+  top: 34px;
   background: -webkit-gradient(linear, left top, left bottom, from(#B160DB), to(#E06FDB));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -657,15 +658,16 @@ footer .titles {
   margin-top: 0px;
   font-family: "shrikhand", sans-serif;
 }
-.titles__heart--opacity {
+.titles__heart--opacity i {
   font-weight: lighter;
+  background-color: white;
   position: absolute;
   font-size: 1.5rem;
-  right: 10px;
+  right: 25px;
   top: 34px;
   z-index: 100;
 }
-.titles__heart--opacity:hover {
+.titles__heart--opacity i:hover {
   animation: heart 3s alternate forwards;
   cursor: alias;
 }
