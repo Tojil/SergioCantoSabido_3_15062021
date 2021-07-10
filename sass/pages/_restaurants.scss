@@ -64,6 +64,7 @@
 .prix {
     padding-top: 23px;
     padding-right: 20px;
+    margin-left: 20px;
 }
 
 .title__menu {
@@ -112,26 +113,20 @@
     }
 }
 
-.suspension__points p {
+#suspension__points {
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
 }
 
 .dishes, 
 .desserts, 
 .entrance {
     width: 90%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
     &--bold {
-        text-overflow: ellipsis;
         padding-left: 10px;
         margin-bottom: 5px;
     }
     &--light {
-        text-overflow: ellipsis;
         padding-left: 10px;
         margin-top: 0px;
     }
