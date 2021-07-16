@@ -26,6 +26,13 @@ footer .titles {
     @include shrikhand
 }
 
+@media screen and (min-width: 600px) {
+    footer p {
+        margin-left: 40px;
+        padding-top: 15px;
+    }
+}
+
 @media screen and (min-width: 1150px) {
     footer {
         display: flex;

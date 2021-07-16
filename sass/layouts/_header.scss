@@ -5,12 +5,14 @@ header i {
     font-size: 25px;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 @media screen and (min-width: 300px) {
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+
     header i {
         left: 20px;
         font-size: 25px;
