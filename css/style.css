@@ -726,6 +726,7 @@ footer .titles {
 }
 
 .prix {
+  font-weight: 900;
   padding-top: 23px;
   padding-right: 20px;
   margin-left: 20px;
@@ -782,11 +783,6 @@ footer .titles {
   animation: fadein 2s 0.3s;
 }
 
-#suspension__points {
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
 .dishes,
 .desserts,
 .entrance {
@@ -795,11 +791,10 @@ footer .titles {
 .dishes--bold,
 .desserts--bold,
 .entrance--bold {
+  font-weight: 600;
+  font-size: 1.2rem;
   padding-left: 10px;
   margin-bottom: 5px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .dishes--light,
 .desserts--light,
