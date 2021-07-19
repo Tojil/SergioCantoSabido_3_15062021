@@ -95,6 +95,7 @@
         border-radius: 20px;
         @include shadow;
     }
+
 }
 
 .entrance, 
@@ -123,10 +124,16 @@
         font-size: 1.2rem;
         padding-left: 10px;
         margin-bottom: 5px;
+        text-overflow: ellipsis;
+        overflow:hidden;
+        white-space: nowrap;
     }
     &--light {
         padding-left: 10px;
         margin-top: 0px;
+        text-overflow: ellipsis;
+        overflow:hidden;
+        white-space: nowrap;
     }
 }
 
@@ -152,6 +159,7 @@
         }
         &:hover :nth-child(1) {
             border-radius: 20px 0px 0px 20px;
+            animation: reduce 400ms linear 0s normal 1 forwards;
         }
     }
 /*    &__text1:hover,

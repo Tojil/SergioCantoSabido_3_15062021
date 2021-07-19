@@ -94,6 +94,11 @@
     transform: rotate(360deg);
   }
 }
+@keyframes reduce {
+  100% {
+    width: 70%;
+  }
+}
 @media screen and (min-width: 1150px) {
   @keyframes jumb {
     0% {
@@ -795,12 +800,18 @@ footer .titles {
   font-size: 1.2rem;
   padding-left: 10px;
   margin-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .dishes--light,
 .desserts--light,
 .entrance--light {
   padding-left: 10px;
   margin-top: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .entrance,
@@ -854,6 +865,7 @@ footer .titles {
 .dishes__menu:hover :nth-child(1),
 .desserts__menu:hover :nth-child(1) {
   border-radius: 20px 0px 0px 20px;
+  animation: reduce 400ms linear 0s normal 1 forwards;
 }
 
 .check--anim {
