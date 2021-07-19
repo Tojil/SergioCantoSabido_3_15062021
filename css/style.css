@@ -762,24 +762,24 @@ footer .titles {
   box-shadow: 0px 5px 15px #a19d9d;
 }
 
-.entrance__text1,
-.dishes__text1,
-.desserts__text1 {
+.entrance :nth-child(3),
+.dishes :nth-child(3),
+.desserts :nth-child(3) {
   animation: fadein 2s;
 }
-.entrance__text2,
-.dishes__text2,
-.desserts__text2 {
+.entrance :nth-child(4),
+.dishes :nth-child(4),
+.desserts :nth-child(4) {
   animation: fadein 2s 0.1s;
 }
-.entrance__text3,
-.dishes__text3,
-.desserts__text3 {
+.entrance :nth-child(5),
+.dishes :nth-child(5),
+.desserts :nth-child(5) {
   animation: fadein 2s 0.2s;
 }
-.entrance__text4,
-.dishes__text4,
-.desserts__text4 {
+.entrance :nth-child(6),
+.dishes :nth-child(6),
+.desserts :nth-child(6) {
   animation: fadein 2s 0.3s;
 }
 
@@ -803,51 +803,57 @@ footer .titles {
   margin-top: 0px;
 }
 
+.entrance,
+.dishes,
+.desserts {
+  /*    &__text1:hover,
+      &__text2:hover,
+      &__text3:hover,
+      &__text4:hover {
+              border-radius: 20px 0px 0px 20px;
+      }
+  /*    &__text1:hover + .check--anim,
+      &__text2:hover + .check--anim,
+      &__text3:hover + .check--anim,
+      &__text4:hover + .check--anim {
+          animation: checkAnim 400ms alternate both;
+          background-color: $check-color;
+          @include shadow2;
+          & i {
+              z-index: 1;
+              opacity: 1;
+              animation: rotate-center 700ms;
+          }
+      } */
+}
 .entrance__menu,
 .dishes__menu,
 .desserts__menu {
+  width: 90%;
   z-index: 3;
   display: flex;
   flex-direction: row;
   width: 100%;
   margin-bottom: 15px;
 }
-.entrance__text1:hover, .entrance__text2:hover, .entrance__text3:hover, .entrance__text4:hover,
-.dishes__text1:hover,
-.dishes__text2:hover,
-.dishes__text3:hover,
-.dishes__text4:hover,
-.desserts__text1:hover,
-.desserts__text2:hover,
-.desserts__text3:hover,
-.desserts__text4:hover {
-  border-radius: 20px 0px 0px 20px;
-}
-.entrance__text1:hover + .check--anim, .entrance__text2:hover + .check--anim, .entrance__text3:hover + .check--anim, .entrance__text4:hover + .check--anim,
-.dishes__text1:hover + .check--anim,
-.dishes__text2:hover + .check--anim,
-.dishes__text3:hover + .check--anim,
-.dishes__text4:hover + .check--anim,
-.desserts__text1:hover + .check--anim,
-.desserts__text2:hover + .check--anim,
-.desserts__text3:hover + .check--anim,
-.desserts__text4:hover + .check--anim {
+.entrance__menu:hover .check--anim,
+.dishes__menu:hover .check--anim,
+.desserts__menu:hover .check--anim {
   animation: checkAnim 400ms alternate both;
   background-color: #99E2D0;
   box-shadow: 8px 5px 15px #928e8e;
 }
-.entrance__text1:hover + .check--anim i, .entrance__text2:hover + .check--anim i, .entrance__text3:hover + .check--anim i, .entrance__text4:hover + .check--anim i,
-.dishes__text1:hover + .check--anim i,
-.dishes__text2:hover + .check--anim i,
-.dishes__text3:hover + .check--anim i,
-.dishes__text4:hover + .check--anim i,
-.desserts__text1:hover + .check--anim i,
-.desserts__text2:hover + .check--anim i,
-.desserts__text3:hover + .check--anim i,
-.desserts__text4:hover + .check--anim i {
+.entrance__menu:hover .check--anim i,
+.dishes__menu:hover .check--anim i,
+.desserts__menu:hover .check--anim i {
   z-index: 1;
   opacity: 1;
   animation: rotate-center 700ms;
+}
+.entrance__menu:hover :nth-child(1),
+.dishes__menu:hover :nth-child(1),
+.desserts__menu:hover :nth-child(1) {
+  border-radius: 20px 0px 0px 20px;
 }
 
 .check--anim {
