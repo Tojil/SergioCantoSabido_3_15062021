@@ -1,17 +1,11 @@
 
 .loader {
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	height: 100%;
+	margin: 0px;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	background-color: #99E2D0;
+	flex-direction: column;
+	align-items: center;
 	z-index: 9998;
-	animation: opacity 3s ease-in-out 4s forwards;
+	animation: opacity 2s ease-in-out 3s forwards;
 }
 
 .loader {
@@ -30,8 +24,8 @@
 	border-left: 16px solid #9356DC;
 	width: 20px;
 	height: 20px;
-	-webkit-animation: spin 1.5s linear infinite;
-	animation: spin 1.5s linear infinite;
+	-webkit-animation: spin 4s linear ;
+	animation: spin 4s linear ;
   }
 
 	.back {
@@ -81,10 +75,15 @@
 	.back span:nth-child(8) {
 		animation-delay:.7s;
 	}
+
+	.home {
+		background-color: #99E2D0;
+		animation: colorChange 2s ease-in-out 3s forwards;
+	 }
 	
 .after__spinLoader {
 	opacity: 0;
-	animation: opacity2 3s ease-in-out 4s forwards;
+	animation: opacity2 2s ease-in-out 3s forwards;
 }
 
 .container__home {
@@ -267,18 +266,8 @@
 	.spin {
 		top: 10%;
 	}
-
-	.loader {
-		height: 100%;
-	}
 	.fonction {
 		margin-left: 60px;
-	}
-}
-
-@media screen and (min-width: 600px) {
-	.loader {
-		height: 198%;
 	}
 }
 
@@ -333,8 +322,5 @@
 	.spin {
 		width: 70px;
 		height: 70px;
-	}
-	.loader {
-		height: 100%;
 	}
 }

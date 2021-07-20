@@ -99,6 +99,14 @@
     width: 70%;
   }
 }
+@keyframes colorChange {
+  from {
+    background-color: #99E2D0;
+  }
+  to {
+    background-color: #ffffff;
+  }
+}
 @media screen and (min-width: 1150px) {
   @keyframes jumb {
     0% {
@@ -322,18 +330,12 @@ footer .titles {
   }
 }
 .loader {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  height: 100%;
+  margin: 0px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #99E2D0;
+  flex-direction: column;
+  align-items: center;
   z-index: 9998;
-  animation: opacity 3s ease-in-out 4s forwards;
+  animation: opacity 2s ease-in-out 3s forwards;
 }
 
 .loader {
@@ -352,8 +354,8 @@ footer .titles {
   border-left: 16px solid #9356DC;
   width: 20px;
   height: 20px;
-  -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
+  -webkit-animation: spin 4s linear;
+  animation: spin 4s linear;
 }
 
 .back {
@@ -412,9 +414,14 @@ footer .titles {
   animation-delay: 0.7s;
 }
 
+.home {
+  background-color: #99E2D0;
+  animation: colorChange 2s ease-in-out 3s forwards;
+}
+
 .after__spinLoader {
   opacity: 0;
-  animation: opacity2 3s ease-in-out 4s forwards;
+  animation: opacity2 2s ease-in-out 3s forwards;
 }
 
 .container__home {
@@ -595,17 +602,8 @@ footer .titles {
     top: 10%;
   }
 
-  .loader {
-    height: 100%;
-  }
-
   .fonction {
     margin-left: 60px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .loader {
-    height: 198%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -659,10 +657,6 @@ footer .titles {
   .spin {
     width: 70px;
     height: 70px;
-  }
-
-  .loader {
-    height: 100%;
   }
 }
 .image__bg {
@@ -731,6 +725,7 @@ footer .titles {
 }
 
 .prix {
+  width: 10%;
   font-weight: 900;
   padding-top: 23px;
   padding-right: 20px;
@@ -796,6 +791,7 @@ footer .titles {
 .dishes--bold,
 .desserts--bold,
 .entrance--bold {
+  width: 80%;
   font-weight: 600;
   font-size: 1.2rem;
   padding-left: 10px;
@@ -807,6 +803,7 @@ footer .titles {
 .dishes--light,
 .desserts--light,
 .entrance--light {
+  width: 80%;
   padding-left: 10px;
   margin-top: 0px;
   text-overflow: ellipsis;
@@ -840,7 +837,6 @@ footer .titles {
 .entrance__menu,
 .dishes__menu,
 .desserts__menu {
-  width: 90%;
   z-index: 3;
   display: flex;
   flex-direction: row;
