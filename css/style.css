@@ -786,7 +786,6 @@ footer .titles {
 .dishes--bold,
 .desserts--bold,
 .entrance--bold {
-  width: 90%;
   font-weight: 600;
   font-size: 1.2rem;
   padding-left: 10px;
@@ -798,7 +797,6 @@ footer .titles {
 .dishes--light,
 .desserts--light,
 .entrance--light {
-  width: 90%;
   padding-left: 10px;
   margin-top: 0px;
   text-overflow: ellipsis;
