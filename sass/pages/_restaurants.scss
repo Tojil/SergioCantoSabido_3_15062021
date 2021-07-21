@@ -119,9 +119,8 @@
 .dishes, 
 .desserts, 
 .entrance {
-    width: 90%;
     &--bold {
-        width: 80%;
+        width: 90%;
         font-weight: 600;
         font-size: 1.2rem;
         padding-left: 10px;
@@ -131,7 +130,7 @@
         white-space: nowrap;
     }
     &--light {
-        width: 80%;
+        width: 90%;
         padding-left: 10px;
         margin-top: 0px;
         text-overflow: ellipsis;
@@ -140,9 +139,7 @@
     }
 }
 
-.entrance,
-.dishes,
-.desserts {
+.entrance {
     &__menu {
         z-index: 3;
         display: flex;
@@ -164,25 +161,6 @@
             animation: reduce 400ms linear 0s normal 1 forwards;
         }
     }
-/*    &__text1:hover,
-    &__text2:hover,
-    &__text3:hover,
-    &__text4:hover {
-            border-radius: 20px 0px 0px 20px;
-    }
-/*    &__text1:hover + .check--anim,
-    &__text2:hover + .check--anim,
-    &__text3:hover + .check--anim,
-    &__text4:hover + .check--anim {
-        animation: checkAnim 400ms alternate both;
-        background-color: $check-color;
-        @include shadow2;
-        & i {
-            z-index: 1;
-            opacity: 1;
-            animation: rotate-center 700ms;
-        }
-    } */
 }
 
 .check--anim {

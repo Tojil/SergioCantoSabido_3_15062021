@@ -783,15 +783,10 @@ footer .titles {
   animation: fadein 2s 0.3s;
 }
 
-.dishes,
-.desserts,
-.entrance {
-  width: 90%;
-}
 .dishes--bold,
 .desserts--bold,
 .entrance--bold {
-  width: 80%;
+  width: 90%;
   font-weight: 600;
   font-size: 1.2rem;
   padding-left: 10px;
@@ -803,7 +798,7 @@ footer .titles {
 .dishes--light,
 .desserts--light,
 .entrance--light {
-  width: 80%;
+  width: 90%;
   padding-left: 10px;
   margin-top: 0px;
   text-overflow: ellipsis;
@@ -811,55 +806,24 @@ footer .titles {
   white-space: nowrap;
 }
 
-.entrance,
-.dishes,
-.desserts {
-  /*    &__text1:hover,
-      &__text2:hover,
-      &__text3:hover,
-      &__text4:hover {
-              border-radius: 20px 0px 0px 20px;
-      }
-  /*    &__text1:hover + .check--anim,
-      &__text2:hover + .check--anim,
-      &__text3:hover + .check--anim,
-      &__text4:hover + .check--anim {
-          animation: checkAnim 400ms alternate both;
-          background-color: $check-color;
-          @include shadow2;
-          & i {
-              z-index: 1;
-              opacity: 1;
-              animation: rotate-center 700ms;
-          }
-      } */
-}
-.entrance__menu,
-.dishes__menu,
-.desserts__menu {
+.entrance__menu {
   z-index: 3;
   display: flex;
   flex-direction: row;
   width: 100%;
   margin-bottom: 15px;
 }
-.entrance__menu:hover .check--anim,
-.dishes__menu:hover .check--anim,
-.desserts__menu:hover .check--anim {
+.entrance__menu:hover .check--anim {
   animation: checkAnim 400ms alternate both;
   background-color: #99E2D0;
   box-shadow: 8px 5px 15px #928e8e;
 }
-.entrance__menu:hover .check--anim i,
-.dishes__menu:hover .check--anim i,
-.desserts__menu:hover .check--anim i {
+.entrance__menu:hover .check--anim i {
   z-index: 1;
   opacity: 1;
   animation: rotate-center 700ms;
 }
-.entrance__menu:hover :nth-child(1),
-.dishes__menu:hover :nth-child(1),
-.desserts__menu:hover :nth-child(1) {
+.entrance__menu:hover :nth-child(1) {
   border-radius: 20px 0px 0px 20px;
   animation: reduce 400ms linear 0s normal 1 forwards;
 }
