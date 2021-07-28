@@ -149,7 +149,7 @@
         }
     }
     &__text {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -185,6 +185,8 @@
         padding-top: 50px;
         display: flex;
         flex-direction: row;
+    }
+    .entrance {
         &__text {
             margin-right: 10px;
         }
@@ -196,15 +198,7 @@
     .image__bg{
         height: 450px;
     }
-    .entrance i,
-    .dishes i,
-    .desserts i {
-        margin-left: 40px;
-    }
-    .entrance,
-    .dishes,
-    .desserts {
-        position: relative;
+    .entrance {
         &__menu {
             margin-right: 15px;
         }
@@ -214,6 +208,9 @@
         border-bottom: 3px solid $new_bg-color;
         width: 40px;
         top: 40px;
-        
+    }
+    .prix {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 } 

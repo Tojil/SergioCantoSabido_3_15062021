@@ -337,7 +337,6 @@ footer .titles {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 118px;
   }
 }
 .loader {
@@ -829,7 +828,7 @@ footer .titles {
   width: 70%;
 }
 .entrance__text {
-  width: 80%;
+  width: 70%;
 }
 
 .check--anim {
@@ -864,7 +863,8 @@ footer .titles {
     display: flex;
     flex-direction: row;
   }
-  .entrance__text, .dishes__text, .desserts__text {
+
+  .entrance__text {
     margin-right: 10px;
   }
 
@@ -877,20 +877,7 @@ footer .titles {
     height: 450px;
   }
 
-  .entrance i,
-.dishes i,
-.desserts i {
-    margin-left: 40px;
-  }
-
-  .entrance,
-.dishes,
-.desserts {
-    position: relative;
-  }
-  .entrance__menu,
-.dishes__menu,
-.desserts__menu {
+  .entrance__menu {
     margin-right: 15px;
   }
 
@@ -899,6 +886,11 @@ footer .titles {
     border-bottom: 3px solid #99e2d0;
     width: 40px;
     top: 40px;
+  }
+
+  .prix {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
