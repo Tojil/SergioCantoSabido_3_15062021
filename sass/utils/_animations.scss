@@ -11,14 +11,14 @@
 
 @keyframes checkAnim {
     from {
-        width: 0%;
+        width: 0;
         opacity: 0;
     }
     60% {
         opacity: 1;
     }
     to {
-        width: 30%;
+        width: 80px;
         opacity: 1;
     }
 }
@@ -99,7 +99,7 @@
         
     }
     100% {
-        width: 80%;
+        width: 60%;
     }
 }
 
@@ -134,14 +134,5 @@
     
     100% {
         width: 30%;
-    }
-}
-
-@keyframes reduce_name {  
-    0% {
-        
-    }
-    100% {
-        width: 80%;
     }
 }
