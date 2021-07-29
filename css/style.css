@@ -17,7 +17,7 @@
     opacity: 1;
   }
   to {
-    width: 80px;
+    width: 22%;
     opacity: 1;
   }
 }
@@ -96,7 +96,7 @@
 }
 @keyframes reduce {
   100% {
-    width: 60%;
+    width: 50%;
   }
 }
 @keyframes colorChange {
@@ -669,6 +669,22 @@ footer .titles {
     height: 70px;
   }
 }
+.entrance--bold,
+.dishes--bold,
+.desserts--bold {
+  font-size: 0.9rem;
+}
+.entrance--light,
+.dishes--light,
+.desserts--light {
+  font-size: 0.8rem;
+}
+
+.prix {
+  font-size: 0.9rem;
+  margin-left: 0px;
+}
+
 .image__bg {
   width: 100%;
   object-fit: cover;
@@ -737,7 +753,7 @@ footer .titles {
 .prix {
   width: 30px;
   font-weight: 900;
-  padding-top: 23px;
+  padding-top: 16px;
   padding-right: 20px;
   margin-left: 10px;
 }
@@ -783,7 +799,7 @@ footer .titles {
 .desserts--bold,
 .entrance--bold {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   padding-left: 10px;
   margin-bottom: 5px;
   text-overflow: ellipsis;
@@ -793,6 +809,7 @@ footer .titles {
 .dishes--light,
 .desserts--light,
 .entrance--light {
+  font-size: 0.8rem;
   padding-left: 10px;
   margin-top: 0px;
   text-overflow: ellipsis;
@@ -804,7 +821,6 @@ footer .titles {
   width: 100%;
   z-index: 3;
   margin-bottom: 15px;
-  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -825,10 +841,10 @@ footer .titles {
 .entrance__menu:hover .entrance__text {
   border-radius: 20px 0px 0px 20px;
   animation: reduce 400ms linear 0s normal 1 forwards;
-  width: 70%;
+  width: 60%;
 }
 .entrance__text {
-  width: 70%;
+  width: 75%;
 }
 
 .check--anim {
@@ -845,8 +861,8 @@ footer .titles {
 .desserts i {
   opacity: 0;
   margin-top: 20px;
-  margin-left: 22px;
-  font-size: 2rem;
+  margin-left: 30%;
+  font-size: 1.5rem;
   color: white;
   align-items: center;
 }
@@ -856,6 +872,37 @@ footer .titles {
   animation: rotate-center 0.6s ease-in-out both;
 }
 
+@media screen and (min-width: 330px) {
+  .entrance i,
+.dishes i,
+.desserts i {
+    font-size: 2rem;
+  }
+
+  .entrance--bold,
+.dishes--bold,
+.desserts--bold {
+    font-size: 1.2rem;
+  }
+  .entrance--light,
+.dishes--light,
+.desserts--light {
+    font-size: 1rem;
+  }
+
+  .prix {
+    font-size: 1.2rem;
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .entrance i,
+.dishes i,
+.desserts i {
+    margin-left: 40%;
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 1150px) {
   .entrance, .dishes, .desserts {
     position: relative;
@@ -891,6 +938,20 @@ footer .titles {
   .prix {
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1435px) {
+  .entrance i,
+.dishes i,
+.desserts i {
+    margin-left: 30%;
+  }
+}
+@media screen and (min-width: 2555px) {
+  .entrance i,
+.dishes i,
+.desserts i {
+    margin-left: 40%;
   }
 }
 

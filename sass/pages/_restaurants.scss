@@ -1,3 +1,20 @@
+
+.entrance,
+.dishes,
+.desserts {
+    &--bold {
+        font-size: .9rem;
+    }
+    &--light {
+        font-size: .8rem;
+    }
+}
+
+.prix {
+    font-size: .9rem;
+    margin-left: 0px;
+} 
+
 .image__bg {
     width: 100%;
     object-fit: cover;
@@ -64,7 +81,7 @@
 .prix {
     width: 30px;
     font-weight: 900;
-    padding-top: 23px;
+    padding-top: 16px;
     padding-right: 20px;
     margin-left: 10px;
 }
@@ -104,7 +121,7 @@
     width: 90%;
     &--bold {
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: .9rem;
         padding-left: 10px;
         margin-bottom: 5px;
         text-overflow: ellipsis;
@@ -112,6 +129,7 @@
         white-space: nowrap;
     }
     &--light {
+        font-size: .8rem;
         padding-left: 10px;
         margin-top: 0px;
         text-overflow: ellipsis;
@@ -125,7 +143,6 @@
         width: 100%;
         z-index: 3;
         margin-bottom: 15px;
-        height: 80px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -145,11 +162,11 @@
         &:hover .entrance__text {
             border-radius: 20px 0px 0px 20px;
             animation: reduce 400ms linear 0s normal 1 forwards;
-            width: 70%;
+            width: 60%;
         }
     }
     &__text {
-        width: 70%;
+        width: 75%;
     }
 }
 
@@ -167,8 +184,8 @@
 .desserts i {
     opacity: 0;
     margin-top: 20px;
-    margin-left: 22px;
-    font-size: 2rem;
+    margin-left: 30%;
+    font-size: 1.5rem;
     color: white;
     align-items: center;
 }
@@ -178,6 +195,36 @@
 	        animation: rotate-center 0.6s ease-in-out both;
 }
 
+@media screen and (min-width: 330px) {
+    .entrance i,
+    .dishes i,
+    .desserts i {
+        font-size: 2rem;
+}
+    .entrance,
+    .dishes,
+    .desserts {
+        &--bold {
+            font-size: 1.2rem;
+            }
+        &--light {
+            font-size: 1rem;
+        }
+    }
+    .prix {
+        font-size: 1.2rem;
+        margin-left: 0px;
+    } 
+}
+
+@media screen and (min-width: 650px) {
+    .entrance i,
+    .dishes i,
+    .desserts i {
+        margin-left: 40%;
+        font-size: 2rem;
+    }
+}
 
 @media screen and (min-width: 1150px) {
     .entrance, .dishes, .desserts {
@@ -214,3 +261,19 @@
         margin-right: 0px;
     }
 } 
+
+@media screen and (min-width: 1435px) {
+    .entrance i,
+    .dishes i,
+    .desserts i {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width: 2555px) {
+    .entrance i,
+    .dishes i,
+    .desserts i {
+        margin-left: 40%;
+    }
+}
