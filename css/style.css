@@ -147,7 +147,7 @@ body a {
   text-decoration: none;
 }
 
-p {
+p, h1, h3 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -388,7 +388,7 @@ footer .titles {
   line-height: 100px;
   opacity: 1;
   animation: jumb 2s;
-  animation-duration: 3s 3s;
+  animation-duration: 3s;
   animation-iteration-count: 4;
 }
 
@@ -660,7 +660,7 @@ footer .titles {
     padding: 0 15px;
     line-height: 100px;
     animation: jumb 2s;
-    animation-duration: 3s 3s;
+    animation-duration: 3s;
     animation-iteration-count: 4;
   }
 
@@ -713,7 +713,7 @@ footer .titles {
 .title_restaurant span i {
   position: absolute;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   right: 25px;
   top: 34px;
   background: -webkit-gradient(linear, left top, left bottom, from(#B160DB), to(#E06FDB));
@@ -732,20 +732,20 @@ footer .titles {
   animation: heart 3s alternate forwards;
 }
 
-.titles {
-  font-size: 1.5rem;
+.title {
+  font-size: 1.1rem;
   margin-top: 0px;
   font-family: "shrikhand", sans-serif;
 }
-.titles__heart--opacity i {
+.title__heart--opacity i {
   font-weight: lighter;
   background-color: #f6f6f6;
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   right: 25px;
   top: 34px;
 }
-.titles__heart--opacity i:hover {
+.title__heart--opacity i:hover {
   animation: heart 3s alternate forwards;
   cursor: alias;
 }
@@ -873,6 +873,17 @@ footer .titles {
 }
 
 @media screen and (min-width: 330px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title__heart--opacity i {
+    font-size: 1.5rem;
+  }
+
+  .titles__restaurant span i {
+    font-size: 1.5rem;
+  }
+
   .entrance i,
 .dishes i,
 .desserts i {

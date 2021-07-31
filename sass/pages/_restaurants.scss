@@ -42,7 +42,7 @@
     & span i {
         position: absolute;
         font-weight: 900;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         right: 25px;
         top: 34px;
         @include heartGradient;
@@ -60,15 +60,15 @@
     }
 }
 
-.titles {
-    font-size: 1.5rem;
+.title {
+    font-size: 1.1rem;
     margin-top: 0px;
     @include shrikhand;
     &__heart--opacity i {
         font-weight: lighter;
         background-color: $container_bg-color;
         position: absolute;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         right: 25px;
         top: 34px;
         &:hover {
@@ -196,6 +196,17 @@
 }
 
 @media screen and (min-width: 330px) {
+    .title {
+        font-size: 1.5rem;
+        &__heart--opacity i {
+            font-size: 1.5rem;
+        }
+    }
+    .titles__restaurant {
+        & span i {
+            font-size: 1.5rem;
+        }
+    }
     .entrance i,
     .dishes i,
     .desserts i {
