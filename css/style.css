@@ -218,8 +218,6 @@ p, h1, h3 {
   border-radius: 30px;
   padding-top: 20px;
   background: #E972DA;
-  background: -webkit-linear-gradient(top left, #E972DA, #A25BDB);
-  background: -moz-linear-gradient(top left, #E972DA, #A25BDB);
   background: linear-gradient(to bottom right, #E972DA, #A25BDB);
 }
 
@@ -238,9 +236,9 @@ p, h1, h3 {
 
 .card__heart {
   font-weight: 900;
-  background: -webkit-gradient(linear, left top, left bottom, from(#B160DB), to(#E06FDB));
+  background: linear-gradient(to bottom right, #E972DA, #A25BDB);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .card__heart--opacity {
   font-weight: lighter;
@@ -344,7 +342,6 @@ footer .titles {
   border-left: 16px solid #9356DC;
   width: 20px;
   height: 20px;
-  -webkit-animation: spin 4s linear;
   animation: spin 4s linear;
 }
 
@@ -696,9 +693,9 @@ footer .titles {
   font-size: 1.1rem;
   right: 25px;
   top: 34px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#B160DB), to(#E06FDB));
+  background: linear-gradient(to bottom right, #E972DA, #A25BDB);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .card__heart--opacity {
@@ -848,7 +845,6 @@ footer .titles {
 }
 
 .rotate-center {
-  -webkit-animation: rotate-center 0.6s ease-in-out both;
   animation: rotate-center 0.6s ease-in-out both;
 }
 

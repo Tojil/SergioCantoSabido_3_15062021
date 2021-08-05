@@ -1,21 +1,17 @@
 @mixin button_color {  
     background: #E972DA;
-    background: -webkit-linear-gradient(top left, #E972DA, #A25BDB);
-    background: -moz-linear-gradient(top left, #E972DA, #A25BDB);
     background: linear-gradient(to bottom right, #E972DA, #A25BDB);
 } 
 
 @mixin heart_color {
     background: #E06FDB;
-    background: -webkit-linear-gradient(bottom, #E06FDB, #B160DB);
-    background: -moz-linear-gradient(bottom, #E06FDB, #B160DB);
     background: linear-gradient(to top, #E06FDB, #B160DB);
 }
 
 @mixin heartGradient {
-    background: -webkit-gradient(linear, left top, left bottom, from(#B160DB), to(#E06FDB));
+    background: linear-gradient(to bottom right, #E972DA, #A25BDB);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 @mixin shrikhand {
