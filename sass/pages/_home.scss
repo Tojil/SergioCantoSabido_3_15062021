@@ -1,3 +1,4 @@
+/*  Hosting animation */
 
 .loader {
 	margin: 0px;
@@ -6,10 +7,7 @@
 	align-items: center;
 	z-index: 9998;
 	animation: opacity 2s ease-in-out 3s forwards;
-}
-
-.loader {
-	transition: transform;
+	animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 .spin {
